@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>News App</title>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <div class="logo flex" onclick="reload()">
+                <img src="./images/vd_black.png" alt="">
+                <h3>News</h3>
+            </div>
+            <div class="browse flex">
+                <ul class="flex">
+                    <li class="item" id="home" onclick="reload()">Home</li>
+                    <li class="item" id="sports" onclick="nav('sports')">Sports</li>
+                    <li class="item" id="politics" onclick="nav('politics')">Politics</li>
+                    <li class="item"  id="education" onclick="nav('education')">Education</li>
+                    <li class="item" id="entertainment" onclick="nav('entertainment')">Entertainment</li>
+                    <li class="item" id="technology" onclick="nav('technology')">Tech</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input class="search-input" type="text" placeholder="search" id="search-text">
+                <img src="./images/search-line.png" alt="" onclick="" id="search">
+            </div>
+        </div>
+    </nav>
+        
+    <main>
+        <div class="card-container container flex" id="card-container">
+            
+        </div>
+    </main>
+    <template id="template">
+        <div class="card">
+            <div class="thumbnail">
+                <img src="./images/400x200.png" alt="news-image" id="news-image">
+                <!-- https://via.placeholder.com/400x200 -->
+            </div>
+            <div class="card-content">
+                <h3 id="title">Title</h3>
+                <h5 id="source">Date</h5>
+                <p id="desc">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </template>
+
+    <div class="footer-section">
+        <div class="footer">
+            <footer>
+                <!-- &copy; -->
+                <!-- All rights reserved. -->
+                <p>Made by <img src="images/vd_black.png" alt="Vivek"></p>
+            </footer>
+        </div>
+        <div class="contact">
+            <a href="https://github.com/vivek-dandu" target="new"><img src="./images/git-icon.png" alt="/github"></a>
+            <a href="https://www.linkedin.com/in/vivek-dandu-791021239/" target="new"><img src="./images/linkedin.png" alt="Linkedin"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

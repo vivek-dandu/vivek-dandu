@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/* utility classes */
+.flex{
+    display: flex;
+}
+ul{
+    list-style: none;
+    gap: 10px;
+}
+.container{
+    max-width: 1300px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+/* nav bar */
+nav{
+    top: 1px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 50px;
+    background-color:white;
+    box-shadow: 0 0 5px rgb(150, 150, 150);
+}
+
+
+.main-nav{
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav .logo{
+    align-items: center;
+    gap: 10px;
+}
+.main-nav .logo:hover{
+    cursor: pointer ;
+}
+.main-nav .logo img{
+    height: 40px;
+}
+
+.item{
+    padding-inline: 10px;
+    padding-block: 2px;
+}
+.item:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.item.active{
+    /* color: red; */
+    background-color: aqua;
+    border-radius: 10px;
+}
+.search-bar{
+    height: 32px;
+    gap: 10px;
+}
+.search-input{
+    border-radius: 5px;
+    padding-inline-start: 10px;
+}
+.search-bar img{
+    height: 25px;
+    transition: all 0.3s;
+}
+.search-bar img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+.card-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-items: start;
+}
+.card{
+    /* gap: 10px; */
+    width: 360px;
+    min-height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(150, 150, 150);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.card:hover{
+    /* transform: scale(1.01); */
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+}
+.card .thumbnail img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-content{
+    padding: 10px;
+}
+#source{
+    margin-block: 10px;
+}
+
+/* footer */
+
+.footer-section{
+    display: flex;
+    position: fixed;
+    height: 40px;
+    bottom: 0;
+    width: 100%;
+    /* text-align: center; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(189, 232, 232);
+    box-shadow: 0 0 5px rgb(150, 150, 150);
+}
+.footer{
+    margin-left: 50%;
+}
+.footer p{
+    font-size: 20px;
+}
+.footer img{
+    /* margin-inline: 10px;
+    margin-top: 2px; */
+    height: 25px;
+}
+
+.contact{
+    margin-right: 5%;
+    display: flex;
+    gap: 10px;
+}
+
+.contact img{
+    height: 35px;
+}
